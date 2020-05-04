@@ -1,0 +1,99 @@
+﻿{% load static %}
+
+﻿<!DOCTYPE html>
+﻿
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Moje ulubione ksiazki </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+
+<body style="background-color: lightgray">
+
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Pasek nawigacyjny</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="ksiazki.html">Strona glowna <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="najlepsze.html">Najlepsze ksiazki</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="biblioteka.html">Biblioteka<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">W budowie</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Wyszukaj" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Wyszukaj</button>
+            </form>
+        </div>
+    </nav>
+
+    <div>
+
+        <h1>
+            <p style="text-align: center"> Moje ulubione ksiazki </pstyle="text-align:>
+        </h1>
+
+        <h4>
+            <p style="text-align: center">
+                Najbardziej lubie ksiazki autorstwa Brandona Sandersona, potrafia wprowadzic czytelnika
+                w niesamowity nastroj oraz skupiaja sie na psychice postaci.
+                A oto kilka z nich:
+            </p>
+        </h4>
+
+        <h3>
+            <p>Z mgly zrodzony </p>
+        </h3>
+
+        <a href="https://pl.wikipedia.org/wiki/Z_mg%C5%82y_zrodzony_(powie%C5%9B%C4%87)"><img src ="{% static 'z_mgly_zrodzony.jpg' %}"> </a>
+
+        <h4>
+            <p>
+                Ksiazka wchodzi w sklad serii, a pozostale dwie to:
+                <ul>
+                    <li>Studnia wstapienia</li>
+                    <li>Bohater wiekow</li>
+                </ul>
+
+            </p>
+        </h4>
+
+        <h3>
+            <p> Droga krolow </p>
+        </h3>
+
+        <a href="https://lubimyczytac.pl/ksiazka/4896952/droga-krolow"><img src="{% static 'droga_krolow.jpg' %}"> </a>
+
+        <h4>
+            <p>
+                Ksiazka wchodzi w sklad serii "Archiwum Burzowego Swiatla", ktora caly czas jest w trakcie produkcji. Pozostale ksiazki to:
+                <ul>
+                    <li>Slowa swiatlosci</li>
+                    <li>Dawca przysiegi</li>
+                    <li>"Rytm wojny", ktory ma wyjsc pod koniec 2020 roku</li>
+                </ul>
+
+            </p>
+        </h4>
+
+    </div>
+
+
+</body>
+
+</html>
