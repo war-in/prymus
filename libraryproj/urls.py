@@ -22,4 +22,5 @@ urlpatterns = [
     path('', views.hello_world),
     path('subpage',views.subpage),
     path("books", views.book_list),
+    path("biblioteka", views.biblioteka),
 ]
