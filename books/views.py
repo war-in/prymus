@@ -17,3 +17,6 @@ def book_list(request):
         "books": books,
     }
     return render(request, template_name="book_list.html", context=context)
+
+def biblioteka(request):
+    return render(request, template_name="biblioteka.html")
